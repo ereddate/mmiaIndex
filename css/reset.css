@@ -1,0 +1,13 @@
+﻿/******** reset *********/
+body{font:12px/1.5 "Microsoft Yahei";}
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,textarea,input,select,option,form{margin:0;}
+th,td,ul,ol,textarea,input,select,option,form{padding:0;}
+textarea{outline:none;overflow:auto;resize:none;}
+input{border:none;background:none;outline:none;vertical-align:middle;_vertical-align:top;}
+a{text-decoration:none;color:#818080;outline:none;}
+table{border-collapse:collapse;}
+li{list-style:none;}
+img{border:none;}
+.clearfix{zoom:1;}
+.clearfix:after{content:"";display:block;clear:both;}
+button{outline:none;}

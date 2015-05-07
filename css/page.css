@@ -1,0 +1,190 @@
+@charset "utf-8";
+/*
+Title:	 Styles for 广而告之 首页
+Create:	 2014-06-04
+Update:	 2014-06-24
+Author:  jiaochao@mmia.com
+Version: v0.1
+*/
+/********** 公用样式 ********/
+body{background-color:#020202;min-width:1000px;}
+.fl{float:left}
+.fr{float:right}
+.mr{margin-right:10px;}
+a{color:#fff;}
+.moban_height{height:6600px;}
+.banner_par{min-width:1000px; overflow:hidden;}
+.color_gray{color:#818080!important;}
+/********** 首页顶部 ********/
+.header_wrap{background:#ededed;line-height:40px;position:relative;z-index:100;}
+.header{min-width:960px;margin:0 auto;color:#303133;width:1200px\9;}
+.header a{color:#303133;}
+.header .left{height:40px;overflow:hidden;}
+.header .left .pollution{font-size:12px;color:#16d33d;}
+.header .left em{font-style:normal}
+.header .left img{vertical-align:middle;width:17px;height:17px;overflow:hidden;margin-top:10px;}
+.header .right .bar{font-family:arial;font-size:17px;line-height:18px;margin-top:11px;margin-left:10px;margin-right:20px;}
+.header .right .login_qq{height:24px;line-height:24px;margin-top:9px;padding-left:25px;background:url(../images/login_icon.png) 0 1px no-repeat;margin-right:15px;}
+.header .right .login_weibo{height:24px;line-height:24px;margin-top:9px;padding-left:30px;background:url(../images/login_icon.png) 0 -22px no-repeat;}
+/********** 移动端下载二维码 ********/
+.user_download{ *width:400px; max-width:400px;}
+.logged{*width:236px;}
+.user_download .down_app:hover{position:relative;}
+.user_download .erwm_wrap{position:absolute;right:-45px;top:30px;padding:0 5px 6px 6px;z-index:2;display:none;}
+.user_download .down_app:hover .erwm_wrap{display:block;}
+.erwm_wrap img{display:block;}
+.user_download .erwm{background:url(../images/ueer_download_mid.png) repeat-y #fff;width:147px;}
+.user_download .erwm img{display:block;padding:15px 14px 10px;}
+.user_download .erwm_img img{display:block;width:113px;height:114px;}
+.user_download .download{text-align:center;line-height:18px;font-size:14px;}
+/********** logo所在区域 ********/
+.top_wrap{background:#fff}
+.top{min-width:960px;margin:0 auto;overflow:hidden;width:1200px\9;}
+.top .logo{float:left;margin-top:9px;_width:180px;}
+.top .logo a,.top .logo img{display:block;}
+.top .logo a{ background:#fff;}
+.search{width:423px;height:27px;border:2px solid #49494a;}
+.search_wrap{float:left;color:#818080;margin:15px 0 0 190px;font-family:\5FAE\8F6F\96C5\9ED1;_width:427px;display:inline}
+.search_wrap .ipt_text{float:left;width:348px;background:#fff;padding:4px 5px;height:18px;line-height:18px;font-size:14px;}
+.search_wrap .ipt_btn{float:right;background:#49494a;font-size:14px;width:64px;line-height:26px;height:27px;color:#fff;font-size:14px;cursor:pointer;}
+.link_wrap{line-height:36px;margin-left:-10px;height:36px;}
+.link_wrap a{color:#818080;margin:0 10px;}
+.link_wrap .active,.link_wrap a:hover{color:#942120;}
+.share_btn{float:right;width:89px;height:41px;line-height:40px;font-size:16px;color:#fff;padding-left:63px;background:url(../images/share_btn.png) no-repeat;margin-top:20px;}
+.user_toux{width:26px;height:25px;margin:6px 12px 0 0;float:left; border:1px solid #a6a09c;}
+.user_name{float:left; text-align:center;max-width: 100px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;-o-text-overflow: ellipsis;*width: 60px;}/* ie6下固定宽度 */
+.user_sel{width:11px;height:6px;float:left;margin:10px 0 0 5px;padding:5px 4px 18px;border:1px solid #ededed; border-bottom:none;}
+/********** 主导航 ********/
+.nav_wrap{background:#191919;height:38px;}
+/*.nav_wrap .nav{width:780px;margin:0 auto;padding-left:100px;width:1100px\9;width:auto;}*/
+.nav_wrap .nav{width:980px; padding-left:220px;margin:0 auto;}
+.nav_wrap li{float:left;}
+.nav_wrap li a{float:left;font-size:14px;line-height:38px;height:38px;padding:0 10px;}
+.nav_wrap .active a,.nav_wrap li a:hover{background:#c51414;}
+/********** 广告位大图 ********/
+.banner_wrap_index{position:relative;background:#fff; height:420px;text-align:center;width:100%;}
+.banner{position:relative;height:420px;margin:0 auto;overflow:hidden;text-align:center}
+.banner_img{height:420px;overflow:hidden;cursor:pointer}
+.banner_wrap_index .left{position:absolute;height:420px;left:0;top:0;width:100%;background:url(../images/loading.png) no-repeat center center #4c4c4c;}
+.left a{width:100%;height:420px;display:block;}
+.circle_dot{height:29px;position:absolute;left:70%;bottom:0;width:106px;margin-left:-53px;}
+.circle_dot a{height:11px;width:11px;float:left;background:url(../images/circle_dot_bg.png) no-repeat;margin-right:10px;}
+.circle_dot a.active{background-position:-21px 0;}
+.banner_wrap_index .banner{min-width:1000px;max-width:1200px;}
+/********** 广告位小图 ********/
+.banner_right{position:absolute;right:112px;top:0;overflow:hidden;width:200px;height:420px;background:#fff;z-index:3;}
+.banner .big_banner{position:absolute;left:0;top:0;}
+/* 首页头图右侧3个图 */
+.banner .big_banner a,.banner .right a{display:block;}
+.banner .big_banner img{display:block;}
+.banner .right img{display:block;width:200px;height:140px;}
+/********** 主体内容 ********/
+.main{padding-bottom:56px;min-width:960px;margin:0 auto;width:1200px\9;}
+.new_magazine .new_wrap{height:360px;margin:39px auto 0;overflow:hidden;}
+.new_wrap img{width:240px;height:180px;display:block}
+.new_wrap .color_hover{background:black;width:240px;height:180px;}
+.new_wrap .color_hover_green{background:#68cb2a;}
+.new_wrap .color_hover_red{background:#e34c51;}
+.new_wrap .color_hover_yellow{background:yellow;}
+.new_wrap .color_hover_blue2{background:#2f5eac;}
+.new_wrap .color_hover_blue{background:#32ace4;}
+.new_wrap li{float:left;}
+.new_magazine .title{font-size:23px;line-height:24px;height:24px;color:#fff;text-align:center;padding:46px 0 10px 0;background:url(../images/dot_bg.png) center 58px no-repeat;}
+.new_wrap li .new_txt{position:absolute;bottom:7px;right:10px;line-height:18px;font-size:13px;text-align:center}
+.pinpai_nav{text-align:center;color:#fff;line-height:20px;height:20px; padding:15px 0;font-size:14px;margin-bottom:37px;}
+.pinpai_nav a{padding:0 20px;color:#fff;}
+.pinpai_nav span{position:relative;top:-5px;}
+.pinpai_nav .active,.pinpai_nav a:hover{color:#c51414;}
+/*瀑布流*/
+.waterfall_wrap{min-width:960px;}
+.waterfall{position:relative;min-width:960px;margin:0 auto;overflow:hidden;width:1200px\9;}
+.waterfall .waterfall_pinp{position:absolute;}
+.waterfall_pinp li{background:#fff;width:230px;margin-bottom:12px;}
+.img_wrap a{display:block;}
+.img_wrap img{display:block;width:230px;overflow:hidden;}
+.pinp_logo{text-align:center;padding:15px 15px 5px;height:30px;overflow:hidden;}
+.pinp_logo a{text-align:center;display:inline-block;position:relative;overflow:hidden;width:200px;height:30px;font-size:14px;line-height:28px;}
+.pinp_txt{text-align:center;width:170px;margin:0 auto;font-size:13px;line-height:16px;color:#000;word-break:break-all;padding:10px 0 24px;}
+@media screen and (min-width:1000px){.header{width:990px;}
+.top{width:990px;}
+.main{width:960px;}
+.nav_wrap .nav{width:860px;}
+}
+@media screen and (min-width:1210px){.header{width:1200px;}
+.top{width:1200px;}
+.main{width:1200px;}
+.nav_wrap .nav{width:860px;}
+}
+@media screen and (min-width:1460px){.header{width:1200px;}
+.top{width:1200px;}
+.main{width:1200px;}
+.nav_wrap .nav{width:860px;}
+}
+@media screen and (max-width:1210px){.banner .right{right:0!important;}
+.banner .left{left:50px !important;}
+.user_download .erwm_wrap{right:-32px !important;}
+}
+/* add 0618 焦点图右侧3个图片增加hover效果 */
+.banner_right a:hover img{transition:all 0.5s;}
+.banner_right a:hover img{opacity:0.8;filter:alpha(opacity=80);}
+/* 瀑布流 */
+#container{text-align:center;}
+#container .cell{padding:0;background:#fff;margin-bottom:10px}
+#container .img_wrap img{width:100%;max-width:235px;}
+/* 公用按钮 */
+.attent_button{color:#fff;font-weight:700;background:url(../images/guanz_btn.png) no-repeat center center;text-align:center;width:76px;height:30px;cursor:pointer;margin:0 auto;padding-left:25px;border:0;display:inline-block;line-height:30px;}
+/* add 0623 回到顶部 */
+.back_top{ display:block;width:38px; height:38px; background:url(../images/top.png) no-repeat;_background:url(../images/png8.png) no-repeat;position:fixed; _position:absolute;bottom:20px; right:20px;}
+/* add 0623 加载更多 */
+.load_more{ text-align:center; padding:10px 0;margin:0 auto;display:block;width:150px;height:30px; border:1px solid #fff; color:#fff; font-size:14px; line-height:30px;background:#020202; text-align:center}
+/* ie 宽度小于1000 */
+.ie_width .header,.ie_width .top,.ie_width .waterfall,.ie_width .main{width:960px;}
+.ie_width .pinpai_nav a{margin:0 20px;}
+/*头图右侧图片*/
+.banner_right a{display:block;height:140px;overflow:hidden;}
+.attent_button_ok{background-image:url(../images/attent_button2.png);color:#676768;} /*已关注*/
+.tqframe{margin-top:10px;}
+/* 登录状态样式0626 */
+.user_download2{position:relative;}
+.user_download .toux_sel{ display:none;position:absolute;background:#fff;border:1px solid #ccc;overflow:hidden;right:104px;*right:110px;top:40px;}/* 修改right值 0701*/
+.user_download2 .toux_sel{display:block;}
+.toux_sel li{margin:0 5px; width:95px; height:29px; line-height:28px; text-align:center; border-bottom:1px dashed #ccc; position:relative; bottom:-1px;}
+.user_download2 .user_sel{border-color:#ccc;background:#fff;}
+.wrap_user_wrap{float:left;}
+/*0627 头图右侧图片尺寸限制 */
+.banner_right img{width:200px; height:140px; overflow:hidden;}
+.banner_wrap{margin:0 auto;}
+/* ie 页面宽度大于1200 */
+.ie1200 .header{width:1200px;}
+.ie1200 .top{width:1200px;}
+.ie1200 .nav_wrap .nav{width:980px; padding-left:220px;}
+.ie1200 .main{width:1200px;}
+.ie1200 .channel_banner{width:1200px;margin:0 auto;}
+/* ie 页面宽度小于1200大于1000 */
+.ie1000 .header{width:1000px;}
+.ie1000 .top{width:1000px;}
+.ie1000 .nav_wrap .nav{width:780px !important; padding-left:220px;}
+.ie1000 .main{width:960px; margin:0 auto;}
+.ie1000 .channel_banner{width:800px;margin:0 auto;}
+/* 窗口小于1000时 */
+.banner_wrap_index1000 .banner_wrap_index{width:1000px;}
+.banner_wrap_index1000 .header{width:1000px;}
+.banner_wrap_index1000 .top{width:1000px;}
+.banner_wrap_index1000 .nav_wrap .nav{width:780px !important; padding-left:220px;}
+.banner_wrap_index1000 .main{width:1000px; margin:0 auto;}
+.new_magazine_box{margin:0 auto;}
+.banner_wrap_index1000 .new_magazine_box{width:960px;}
+.banner_wrap_index1000 .channel_banner{width:800px;margin:0 auto;}
+.banner_wrap_index1000 .banner_wrap{width:1000px;}
+/* 频道页 九宫格 */
+.banner_pindao a,.banner_pindao img{ vertical-align:middle; display:block;}
+.banner{max-width:1200px; min-width:800px;}
+.banner .gongge_left,.banner .gongge_midd,.banner .gongge_right{float:left;width:400px;}
+.ban_h1{width:400px;height:140px;overflow:hidden;}
+.ban_h2{width:400px;height:280px;overflow:hidden;}
+.ban_h3{width:400px;height:420px;overflow:hidden;}
+/* 热词loading */
+.searchbox_keys .load_span{margin-left:10px;}
+
+
+

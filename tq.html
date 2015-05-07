@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="gb2312"/>
+		<style>
+			body{padding:0;margin:0;font-size:12px;line-height:20px; font-family:"Microsoft Yahei";background-color:#ededed;}
+		</style>
+	</head>
+	<body>
+		<div id="tq"></div>
+		<script>
+			function tq(g) {
+				var dom = document.createElement("script"),
+					city = "北京";
+				dom.src = "http://php.weather.sina.com.cn/iframe/index/w_cl.php?day=2&code=js&cbf=homeWeatherRenderFun__&city="+city;
+				document.getElementsByTagName("head")[0].appendChild(dom);
+				window["homeWeatherRenderFun__"] = function(data) {
+					var id = document.getElementById("tq");
+					if (data && data.w && data.w[city]){
+						var sdata = data.w[city][0];
+						id.innerHTML = city+"天气："+sdata.d1+sdata.p1+" "+sdata.s1+" 气温"+sdata.t1+"/"+sdata.t2;
+					}
+				};
+			}
+			tq("tq");
+		</script>
+	</body>
+</html>
